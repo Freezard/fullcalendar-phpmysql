@@ -3,8 +3,8 @@ A calendar based on https://fullcalendar.io/ which saves data to MySQL through t
 
 Mostly written in vanilla JS with a bit of jQuery. Database API used is PDO.
 
-![Site overview](images/readme/weekly.jpg)
-![Site overview](images/readme/monthly.jpg)
+![Weekly view](images/readme/weekly.jpg)
+![Monthly view](images/readme/monthly.jpg)
 
 ## FEATURES
 - Browse separate calendars for multiple users.
@@ -16,7 +16,7 @@ Mostly written in vanilla JS with a bit of jQuery. Database API used is PDO.
 - Repeat events for x weeks with customizable days.
 - Weekly and monthly views are available.
 - Holidays are marked as red (requires a Google Calendar API key).
-![Site overview](images/readme/holiday.jpg)
+![Holidays](images/readme/holiday.jpg)
 - A basic CRUD page is included to easily add, edit, and delete data.
 
 ## INSTALLATION
@@ -29,13 +29,13 @@ Mostly written in vanilla JS with a bit of jQuery. Database API used is PDO.
 
 ## USAGE
 - Add events by clicking on a start time and dragging to its end time.
-![Site overview](images/readme/add.jpg)
+![Add event](images/readme/add.jpg)
 - Edit events by selecting the event and then clicking it again.
 - Delete events by selecting the event and pressing the Delete key.
 - Move an event to another day by dragging it around.
 - Resize the event quickly by clicking on the bottom of the event and dragging it up/down.
 - Duplicate a single event by holding the Shift key and dragging it to a new location.
 - Click the Copy button to duplicate a whole week of events to another week, repeatable for consecutive weeks.
-![Site overview](images/readme/copy.jpg)
+![Copy events](images/readme/copy.jpg)
 - Visit "fullcalendar-phpmysql/data" to add, edit, and delete data.
-![Site overview](images/readme/crud.jpg)
+![CRUD](images/readme/crud.jpg)
