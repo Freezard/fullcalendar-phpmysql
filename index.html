@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- FullCalendar CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.2/main.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>FullCalendar 5 PHP/MySQL</title>
+</head>
+<body>
+  <div id="selectUser"><select id="user"></select></div>
+  <div id="calendar"></div>
+  <div id="addEventDialog" class="modal">
+    <div class="modal-content">
+      <div class="modal-header" id="addEventHeader">
+        <h4 class="modal-title">Add activity</h4>
+      </div>
+	  <div id="addActivityDiv" class="row"><div class="col-12">Activity: <select id="addActivity"></select></div></div>
+	  <div class="row"><div class="col-12">Tutor: <select id="addTutor"></select></div></div>
+	  <div class="row"><div class="col-12">Location: <select id="addPlace"></select></div></div>
+	  <div class="row">
+	    <div class="col-6">From: <select id="addStart"></select></div>
+		<div class="col-6"> To: <select id="addEnd"></select></div>
+	  </div>
+	  <div class="row"><div class="col-4">
+	    <input type="checkbox" id="repeat"> Repeat</div>
+	    <div id="repeatValueDiv" class="col-8">
+		  <input type="radio" name="repeatTime" value="12" checked> 3 months<br>
+		  <input type="radio" name="repeatTime" value="4"> 1 month<br><br>
+		  <input type="checkbox" name="repeatDay" value="1">Mon 
+		  <input type="checkbox" name="repeatDay" value="2">Tue 
+		  <input type="checkbox" name="repeatDay" value="3">Wed 
+		  <input type="checkbox" name="repeatDay" value="4">Thu 
+		  <input type="checkbox" name="repeatDay" value="5">Fri
+		</div>
+	  </div>
+	  <div id="buttons" class="row"><div class="col-12">
+	    <button class="btn btn-primary" id="addok" value="OK">OK</button>
+		<button class="btn btn-danger" id="addCancel">Cancel</button></div>
+	  </div>
+    </div>
+  </div>
+  <div id="editEventDialog" class="modal">
+    <div class="modal-content">
+      <div class="modal-header" id="editEventHeader">
+        <h4 class="modal-title">Edit activity</h4>
+      </div>
+	  <div id="editActivityDiv" class="row"><div class="col-12">Activity: <select id="editActivity"></select></div></div>
+	  <div class="row"><div class="col-12">Tutor: <select id="editTutor"></select></div></div>
+	  <div class="row"><div class="col-12">Location: <select id="editPlace"></select></div></div>
+	  <div class="row">
+	    <div class="col-6">From: <select id="editStart"></select></div>
+		<div class="col-6"> To: <select id="editEnd"></select></div>
+	  </div>
+	  <div id="editButtons" class="row"><div class="col-12">
+	    <button class="btn btn-primary" id="editok" value="OK">OK</button>
+		<button class="btn btn-danger" id="editCancel">Cancel</button></div>
+	  </div>
+    </div>
+  </div>
+  <div id="copyEventsDialog" class="modal">
+    <div class="modal-content">
+      <div class="modal-header" id="copyEventsHeader">
+        <h4 class="modal-title">Copy activities</h4>
+      </div>
+	  <div id="copyEventsFromDiv" class="row">
+	    <div class="col-4">From:</div>
+		<div class="col-4">Week: <select id="copyEventsFromWeek"></select></div>
+		<div class="col-4"> Year: <select id="copyEventsFromYear"></select></div>
+	  </div>
+	  <div class="row">
+	    <div class="col-4">To:</div>
+		<div class="col-4">Week: <select id="copyEventsToWeek"></select></div>
+		<div class="col-4"> Year: <select id="copyEventsToYear"></select></div>
+	  </div>
+	  <div class="row">
+	    <div class="col-4">Repeat for <select id="copyEventsWeeks"></select> weeks</div>
+	  </div>
+	  <div class="row"><div class="col-12">
+	    <button class="btn btn-primary" id="copyEventsok" value="OK">OK</button>
+		<button class="btn btn-danger" id="copyEventsCancel">Cancel</button></div>
+	  </div>
+    </div>
+  </div>
+</body>
+	<!-- jQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<!-- Bootstrap JS CDN -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<!-- Moment JS CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<!-- FullCalendar JS CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.2/main.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.2/locales/sv.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

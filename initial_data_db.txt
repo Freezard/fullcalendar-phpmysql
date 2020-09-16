@@ -1,0 +1,19 @@
+INSERT INTO `users` (firstName, lastName) VALUES
+('User', '1'),
+('User', '2'),
+('User', '3');
+
+INSERT INTO `activities` (name) VALUES
+('English'),
+('Excel'),
+('Word');
+
+INSERT INTO `tutors` (firstName, lastName) VALUES
+('Tutor', '1'),
+('Tutor', '2'),
+('Tutor', '3');
+
+INSERT INTO `places` (name) VALUES
+('Location 1'),
+('Location 2'),
+('Location 3');

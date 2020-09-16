@@ -1,0 +1,104 @@
+#calendar {
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+.fc-event-main {
+  line-height: 1.4;
+}
+.fc-event-main span {
+  font-size: 0.85em;
+}
+.fc-daygrid-event {
+  overflow: hidden;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  padding-top: 300px !important;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0) !important;
+  background-color: rgba(0,0,0,0.4) !important;
+  font-size: 14px;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #888;
+  width: 40%;
+}
+.modal-content div {
+  margin-bottom: 3px;
+}
+.modal-header {
+  border-bottom: 0 none;
+}
+.modal-title {
+  margin: 0 auto;
+}
+.modal .btn {
+  font-size: 14px;
+}
+.selected {
+  filter: opacity(70%);
+}
+select {
+  max-width: 100%;
+  font-size: 14px;
+}
+#selectUser {
+  margin: 40px auto;
+  text-align: center;
+}
+#user {
+  margin-right: 40px;
+}
+#addEventHeader {
+  background-color: #E7E9FD;
+}
+#editEventHeader {
+  background-color: #F0F1D9;
+}
+#copyEventsHeader {
+  background-color: #E7E9FD;
+}
+#addActivityDiv {
+  margin-top: 5px;
+}
+#editActivityDiv {
+  margin-top: 5px;
+}
+#copyEventsFromDiv {
+  margin-top: 5px;
+}
+#repeatValueDiv {
+  display: none;
+}
+@media (max-width: 768px) {
+  .fc-center h2 {
+	font-size: 20px;
+  }
+  
+  .fc-button {
+    font-size: 10px;
+  }
+}
+@media print {
+  .fc .fc-button {
+    display: none;
+  }
+
+  .fc-timegrid-now-indicator-line {
+    display: none;
+  }
+}
